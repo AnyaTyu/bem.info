@@ -17,7 +17,8 @@ block('search').content()(function() {
                     name: 'text',
                     autocomplete: false,
                     // TODO i18n
-                    placeholder: lang === 'ru' ? 'Искать' : 'Search'
+                    placeholder: lang === 'ru' ? 'Искать' : 'Search',
+                    mix: { block: 'header', elem: 'input' }
                 },
                 {
                     tag: 'input', attrs: { type: 'hidden', name: 'reqenc' }
@@ -32,15 +33,18 @@ block('search').content()(function() {
                     block: 'search',
                     elem: 'submit',
                     tag: 'button',
-                    attrs: { type: 'submit' }
+                    attrs: { type: 'submit' },
+                    mix: { block: 'header', elem: 'submit' }
                 }
             ]
         },
         {
-            elem: 'open'
+            elem: 'open',
+            mix: { block: 'header', elem: 'open' }
         },
         {
-            elem: 'close'
+            elem: 'close',
+            mix: { block: 'header', elem: 'close' }
         }
     ]
 });
