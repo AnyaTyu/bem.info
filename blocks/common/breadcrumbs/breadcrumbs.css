@@ -2,6 +2,10 @@
 {
     font-size: 17px;
 
+    position: absolute;
+    top: 0;
+    left: 81px;
+
     display: inline-block;
 
     padding: 0;
@@ -48,4 +52,36 @@
 .breadcrumbs__link:hover
 {
     color: #fff;
+}
+
+/*tablet*/
+@media all and (max-width: 780px)
+{
+    .breadcrumbs
+    {
+        position: static;
+
+        display: block;
+
+        width: 70%;
+        margin: 15px auto 0;
+        padding: 10px 28px;
+    }
+}
+
+@media all and (max-width: 480px)
+{
+    .breadcrumbs
+    {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 5px 8px 0;
+        padding: 0;
+    }
+
+    .breadcrumbs__item
+    {
+        margin: 0;
+        padding: 10px 5px 0;
+    }
 }

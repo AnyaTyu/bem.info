@@ -1,79 +1,82 @@
 .header
 {
-    /* search block will position absolutely search field inside header block */
     position: relative;
-
+}
+.header_opened + .sitemap
+{
     display: flex;
-
-    height: 70px;
-
-    white-space: nowrap;
+    flex-wrap: wrap;
+}
+/* Hide all siblings then sitemap is shown */
+.header_opened ~ div,
+.header_opened ~ footer
+{
+    display: none;
 }
 
-.header__logo
+@media all and (max-width: 780px)
 {
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.header__breadcrumbs
-{
-    flex-grow: 1;
-
-    margin: 18px 0 0 29px;
-}
-
-.header__forum
-{
-    margin: 19px 40px 0 10px;
-
-    transition: color 0.3s;
-    text-decoration: none;
-    letter-spacing: 2px;
-
-    color: rgba(255, 255, 255, 0.65);
-}
-
-.header__forum:hover
-{
-    color: #fff;
-}
-
-.header__lang
-{
-    position: relative;
-    z-index: 1;
-
-    margin: 22px -64px 0 5px;
-    padding: 0;
-}
-
-/*mobile*/
-@media all and (max-width: 480px)
-{
-    .header
+    .header_opened
     {
-        overflow: hidden;
-
-        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
     }
 
-    .header__forum
+    .header.header_opened + .sitemap
+    {
+        top: 52px;
+
+        display: block;
+
+        transform: translate3d(0, 100%, 0);
+
+        opacity: 0;
+    }
+
+    .header_opened.header_focused .header__menu .nav,
+    .header_opened.header_focused .header__menu .breadcrumbs
     {
         display: none;
     }
-}
 
-/*tablet*/
-@media all and (max-width: 780px)
-{
-}
+    .header__menu
+    {
+        position: absolute;
+        z-index: 1;
 
-/*tablet md*/
-@media all and (max-width: 1200px)
-{
-}
+        width: 100%;
+        height: auto;
+        padding: 0 0 30px;
 
-/*tablet lg*/
-@media all and (min-width: 1200px)
-{
+        transition: all 0.3s ease-in-out;
+        transform: translate3d(0, -120%, 0);
+
+        opacity: 0;
+        border-top: 0;
+        background: inherit;
+    }
+
+    .header_opened .header__menu
+    {
+        top: 49px;
+
+        transform: none;
+
+        opacity: 1;
+    }
+
+    .header_opened .header__layout
+    {
+        display: none;
+    }
+
+    .header_opened.header_focused + .sitemap
+    {
+        transform: none;
+
+        opacity: 1;
+    }
 }
