@@ -1,0 +1,159 @@
+<!DOCTYPE html><html class="ua_js_no"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Файлова система / Методологія / БЕМ</title><script>(function(e,c){e[c]=e[c].replace(/(ua_js_)no/g,"$1yes");})(document.documentElement,"className");</script><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,600,700&amp;subset=cyrillic"/><link rel="stylesheet" href="/bem.info/uk/methodology.min.css"/><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/><meta property="og:image" content="https://ru.bem.info/og_image/logo_theme_stripe.png"/><meta property="og:url" content="/methodology/filesystem/"/><meta property="og:type" content="article"/><meta property="og:description" content="Файлова система"/><meta property="og:keywords" content="methodology"/><link rel="shortcut icon" href="/bem.info/uk/favicon.ico"/></head><body class="page"><div class="header i-bem" data-bem='{"header":{}}'><div class="header__layout"><a class="logo header__logo" href="/bem.info/uk/"><svg class="logo__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101.7 84"><path d="M0 13h23.8v7H0zM0 0h23.8v7H0zm42.7 25.9H0v7h41.1c4.5 0 15 .1 18.9 6.4v-3.9c-1.9-6.2-7.5-9.5-17.3-9.5zm.1 13H0v7h41.1c10 0 16.3.4 18.9 1.8v-3.1c-2-4.9-10.4-5.7-17.2-5.7zm-.1 33H0v-7h41.1c4.5 0 15-.1 18.9-6.4v3.9c-1.9 6.2-7.5 9.5-17.3 9.5zm.1-13H0v-7h41.1c10 0 16.3-.4 18.9-1.8v3.1c-2 4.9-10.4 5.7-17.2 5.7zM70.4 84h31.4v-4.3H71.3c-2.7 0-9.1-.1-11.4-3.8v2.4C61 82 64.4 84 70.4 84zm-.1-7.9h31.4v-4.3H71.3c-6.1 0-9.9-.2-11.4-1.1v1.9c1.2 3 6.3 3.5 10.4 3.5z"/></svg></a><ul class="lang-switcher header__lang"><li class="lang-switcher__item"><a class="lang-switcher__link" href="/bem.info/en/methodology/filesystem/">en</a></li><li class="lang-switcher__item"><a class="lang-switcher__link" href="/bem.info/ru/methodology/filesystem/">ru</a></li><li class="lang-switcher__item lang-switcher__item_current">uk</li></ul><a class="header__forum" href="https://ru.bem.info/forum/">Форум</a></div><div class="search header__search i-bem" data-bem='{"search":{}}'><form class="form search__form search__form_site_methodology i-bem" data-bem='{"form":{}}' action="https://yandex.com/sitesearch"><span class="input input_type_search i-bem" data-bem='{"input":{}}'><span class="input__box"><input class="input__control" name="text" placeholder="Search" autocomplete="off" type="search"/></span></span><input type="hidden" name="reqenc"/><input type="hidden" name="searchid" value="1944806"/><input type="hidden" name="l10n" value="uk"/><div class="search-icon search__submit"><svg viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6"/><path d="M11 11l5 5"/></svg></div></form></div><div class="header__menu"><ul class="breadcrumbs header__breadcrumbs"><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/bem.info/uk/methodology/">Методологія</a></li></ul><ul class="nav"><li class="nav__item"><a class="nav__link" href="/bem.info/uk/methodology/key-concepts/">Основні поняття</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/uk/methodology/naming-convention/">Угода щодо іменування</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/uk/methodology/js/">JavaScript</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/uk/methodology/js-principles/">Особливості JavaScript</a></li><li class="nav__item nav__item_current">Файлова система</li><li class="nav__item"><a class="nav__link" href="/bem.info/uk/methodology/build/">Збірка</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/uk/methodology/declarations/">Декларації</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/uk/methodology/solved-problems/">Які проблеми вирішує</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/uk/methodology/history/">Історія створення</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/uk/methodology/articles/">Статті</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/uk/methodology/faq/">FAQ</a></li></ul></div><div class="header__toggle search-icon"><span class="header__toggle-line"></span></div></div><div class="sitemap i-bem" data-bem='{"sitemap":{}}'><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_methodology"><a class="sitemap__link" href="/bem.info/uk/methodology/">Методологія</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/uk/methodology/key-concepts/">Основні поняття</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/uk/methodology/naming-convention/">Угода щодо іменування</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/uk/methodology/js/">JavaScript</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/uk/methodology/js-principles/">Особливості JavaScript</a></li><li class="sitemap__tree-item-1"><strong class="sitemap__current">Файлова система</strong></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/uk/methodology/build/">Збірка</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/uk/methodology/declarations/">Декларації</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/uk/methodology/solved-problems/">Які проблеми вирішує</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/uk/methodology/history/">Історія створення</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/uk/methodology/articles/">Статті</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/uk/methodology/faq/">FAQ</a></li></ul></div><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_tools"><a class="sitemap__link" href="https://ru.bem.info/tools/">Інструментарій</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="https://ru.bem.info/tools/bem/bem-tools/">bem-tools</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="https://ru.bem.info/tools/bem/enb-bem/">enb-bem</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link">Модулі</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="https://ru.bem.info/tools/bem/bem-naming/">bem-naming</a></li></ul></div><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_platform"><a class="sitemap__link">Платформа</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link">Технології</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="https://ru.bem.info/technology/i-bem/v2/i-bem-js/">i-bem</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="https://ru.bem.info/technology/deps/about/">DEPS</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="https://ru.bem.info/technology/bemjson/v2/bemjson/">BEMJSON</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="https://ru.bem.info/technology/bemhtml/v2/intro/">BEMHTML</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="https://ru.bem.info/technology/bemtree/v2/bemtree/">BEMTREE</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="https://ru.bem.info/libs/">Бібліотеки</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="https://ru.bem.info/libs/bem-core/">bem-core</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="https://ru.bem.info/libs/bem-components/">bem-components</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="https://ru.bem.info/libs/bem-history/">bem-history</a></li></ul></div><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_community"><a class="sitemap__link" href="/bem.info/uk/community/">Спільнота</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="https://ru.bem.info/blog/">Блог</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="https://ru.bem.info/events/">Події</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="https://ru.bem.info/forum/">Форум</a></li></ul></div></div><div class="content"><div class="article-wrap"><div class="article"><ul class="article-tags"><li class="article-tags__tag"><a class="article-tags__link" href="/bem.info/uk/tags/methodology">methodology</a></li></ul><h1 class="article__heading article__heading_1" id="Організація-файлової-системи"><a href="#Організація-файлової-системи" class="article__heading-anchor"></a>Організація файлової системи</h1><p>Прийнятий у методології БЕМ компонентний підхід застосовується і до організації БЕМ-проектів у файловій системі. У БЕМ не тільки інтерфейс ділиться на незалежні компоненти — блоки, але й реалізація блоків ділиться на незалежні частини — файли.</p>
+<p>На цій сторінці ви знайдете:</p>
+<ul>
+<li><a href="#Принципи організації файлової системи-БЕМ-проекту">Принципи організації файлової системи</a></li>
+<li><a href="#Організація файлової системи-БЕМ-проекту">Приклад файлової системи БЕМ-проекту</a></li>
+<li><a href="#Приклади використання-рівнів-перевизначення">Приклади використання рівнів перевизначення</a></li>
+</ul>
+<h2 class="article__heading article__heading_2" id="Принципи-організації-файлової-системи-БЕМ-проекту"><a href="#Принципи-організації-файлової-системи-БЕМ-проекту" class="article__heading-anchor"></a>Принципи організації файлової системи БЕМ-проекту</h2><p>У БЕМ-проекті код поділяється на дрібні незалежні частини для зручності роботи з окремими блоками. Перед відправкою в браузер файли збираються і оптимізуються. Таким чином ми розмежовуємо код, з яким працюють люди, і код, що передається в браузер.</p>
+<p>У файловій системі код БЕМ-проекту організовано за такими принципами:</p>
+<ul>
+<li><a href="#Реалізація-блоку-поділяється на окремі файли">Реалізація блоку розділяється на окремі файли</a></li>
+<li><a href="#Опціональні-елементи-і-модифікатори-виносяться в окремі файли">Необов&#39;язкові елементи і модифікатори виносяться в окремі файли</a></li>
+<li><a href="#Файли-об&#39;єднуються-за змістом-а-не-по-типу">Файли об&#39;єднуються за змістом, а не за типом</a></li>
+<li><a href="#Проект розділяється на рівні-перевизначення">Проект розділяється на рівні перевизначення</a></li>
+</ul>
+<h3 class="article__heading article__heading_3" id="Реалізація-блоку-розділяється-на-окремі-файли"><a href="#Реалізація-блоку-розділяється-на-окремі-файли" class="article__heading-anchor"></a>Реалізація блоку розділяється на окремі файли</h3><p>Набір файлів блоку (наприклад, <code>input.css</code>, <code>input.js</code>) залежить від <a href="../key-concepts/key-concepts.ru.md#Технологія-реалізації">технологій</a>, що входять у реалізацію блоку.</p>
+<p><em>Навіщо?</em></p>
+<ul>
+<li><p><strong>Поліпшення навігації по проекту</strong></p>
+<p>Структура проекту побудована за єдиним принципом, а імена блоків унікальні. Це дозволяє розробникам швидко орієнтуватися в різних частинах проекту і знаходити потрібні файли.</p>
+</li>
+<li><p><strong>Спрощення перенесення блоків між проектами</strong></p>
+<p>Реалізація блоків розділена по окремих файлів. При перенесенні блоку з проекту в проект достатньо скопіювати потрібні файли або теки.</p>
+</li>
+</ul>
+<h3 class="article__heading article__heading_3" id="Додаткові-елементи-і-модифікатори-виносяться-в-окремі-файли"><a href="#Додаткові-елементи-і-модифікатори-виносяться-в-окремі-файли" class="article__heading-anchor"></a>Додаткові елементи і модифікатори виносяться в окремі файли</h3><p><em>Навіщо?</em></p>
+<ul>
+<li><p><strong>Підключення тільки потрібної реалізації блоку</strong></p>
+<p>У збірку підключаються тільки файли, які дійсно необхідні для даної реалізації блоку.</p>
+</li>
+</ul>
+<h3 class="article__heading article__heading_3" id="Файли-об39єднуються-за-змістом-а-не-за-типом"><a href="#Файли-об39єднуються-за-змістом-а-не-за-типом" class="article__heading-anchor"></a>Файли об&#39;єднуються за змістом, а не за типом</h3><p>Файли блоку групуються з допомогою загальних <a href="../naming-convention/naming-convention.ru.md">правил іменування</a>. Для зручності роботи вони можуть бути об&#39;єднані в директорію цього блоку.</p>
+<p><em>Навіщо?</em></p>
+<ul>
+<li><p><strong>Підключення у проект тільки необхідних блоків</strong></p>
+<p>Блоки реалізовані незалежно. Це дозволяє налаштовувати збірку так, щоб у проект потрапляли тільки потрібні блоки.</p>
+</li>
+</ul>
+<h3 class="article__heading article__heading_3" id="Проект-розділяється-на-рівні-перевизначення"><a href="#Проект-розділяється-на-рівні-перевизначення" class="article__heading-anchor"></a>Проект розділяється на рівні перевизначення</h3><p>Кінцева реалізація блоку може бути розділена за <a href="#Приклади використання-рівнів-перевизначення">рівнями перевизначення</a>.</p>
+<p><em>Навіщо?</em></p>
+<ul>
+<li><p><strong>Відсутність дублювання коду</strong></p>
+<p>Винесення загальної реалізації для всіх платформ на окремий рівень дозволяє уникнути дублювання коду та скоротити час на налагодження проекту.</p>
+</li>
+<li><p><strong>Перевизначення і доопределение блоків готових бібліотек</strong></p>
+<p>Зміна блоку бібліотеки не вимагає його копіювання рівень проекту. Досить створити потрібний файл з правками або новим кодом на іншому рівні перевизначення і підключити в збірку.</p>
+</li>
+<li><p><strong>Оновлення підключених в проект бібліотек</strong></p>
+<p>Поділ проекту на рівні дозволяє змінювати блоки, не зачіпаючи код бібліотеки. При оновленні бібліотеки модифікація блоків зберігається на іншому рівні проекту.</p>
+</li>
+</ul>
+<h2 class="article__heading article__heading_2" id="Організація-файлової-системи-БЕМ-проекту"><a href="#Організація-файлової-системи-БЕМ-проекту" class="article__heading-anchor"></a>Організація файлової системи БЕМ-проекту</h2><p>Блоку відповідає директорія у файловій системі. Імена блоку і його директорії збігаються.</p>
+<pre><code class="lang-files">blocks/
+    input/     # Директорія блоку input
+    button/    # Директорія блоку button
+</code></pre>
+<p>Реалізація блоку розділена на окремі файли — файли технологій. Імена файлів збігаються з ім&#39;ям блоку. Розширення відповідає технології.</p>
+<pre><code class="lang-files">blocks/
+    input/
+        input.css       # Реалізація блоку input в технології CSS
+        input.js        # Реалізація блоку input в технології JavaScript
+    button/
+        button.css
+        button.js
+        button.png
+</code></pre>
+<p>Імена файлів і директорій <a href="../key-concepts/key-concepts.ru.md#БЕМ-сутність">БЕМ-сутностей</a> відповідають <a href="../naming-convention/naming-convention.ru.md">згоди щодо іменування</a>:</p>
+<ul>
+<li>Елемент — <code>block__elem.extension</code> (<code>input__box.css</code>).</li>
+<li>Модифікатор блоку — <code>block_mod_val.extension</code> (<code>input_type_search.css</code>) або <code>block_mod.extension</code> (<code>input_disabled.css</code>). Значення булевого модифікатора не вказується.</li>
+<li>Модифікатор елемента — <code>block__elem_mod_val.extension</code> (<code>input__clear_size_large.css</code>) або <code>block__elem_mod.extension</code> (<code>input__clear_visible.css</code>).</li>
+</ul>
+<p>Модифікатори та елементи виділяються в окремі файли групуються в піддиректорії блоку з відповідними іменами.</p>
+<pre><code class="lang-files">blocks/
+    input/
+        _type/                        # Директорія модифікатора type
+            input_type_search.css     # Реалізація модифікатора type
+                                      # зі значенням search в технології CSS
+        __box/                        # Директорія елемента box
+            input__box.css
+        input.css
+        input.js
+    button/
+        button.css
+        button.js
+        button.png
+</code></pre>
+<p>При створенні модифікаторів з різними значеннями (наприклад, <code>popup_target_anchor.extension</code> і <code>popup_target_position.extension</code>), загальний код може бути винесений в окремий файл (<code>popup_target.extension</code>) без зазначення значення модифікатора в імені.</p>
+<pre><code class="lang-files">blocks/
+    popup/
+        _target/
+            popup_target.css           # Загальний код модифікатора target
+            popup_target_anchor.css    # Модифікатор target у значенні якір
+            popup_target_position.css  # Модифікатор target у значенні position
+        _visible/
+            popup_visible.css          # Булевий модифікатор visible
+    popup.css
+    popup.js
+</code></pre>
+<h3 class="article__heading article__heading_3" id="Приклади-з-життя"><a href="#Приклади-з-життя" class="article__heading-anchor"></a>Приклади з життя</h3><ul>
+<li><a href="https://github.com/bem/bem-core/tree/v2/common.blocks/page">bem-core</a></li>
+<li><a href="https://github.com/bem/bem-components/tree/v2/common.blocks/button">bem-components</a></li>
+</ul>
+<h2 class="article__heading article__heading_2" id="Приклади-використання-рівнів-перевизначення"><a href="#Приклади-використання-рівнів-перевизначення" class="article__heading-anchor"></a>Приклади використання рівнів перевизначення</h2><p>Реалізація блоку може бути розділена за <a href="../key-concepts/key-concepts.ru.md#Рівень-перевизначення">рівнями перевизначення</a>.</p>
+<p>Розглянемо кілька прикладів:</p>
+<ul>
+<li><a href="#Підключення бібліотеки">Підключення бібліотеки</a></li>
+<li><a href="#Поділ проекту на-платформи">Поділ проекту на платформи</a></li>
+</ul>
+<h3 class="article__heading article__heading_3" id="Підключення-бібліотеки"><a href="#Підключення-бібліотеки" class="article__heading-anchor"></a>Підключення бібліотеки</h3><p>У проект можна підключити бібліотеку як окремий рівень. Змінювати (до - або ігнорувати) блоки можна на іншому рівні проекту. При складанні підключиться вихідна реалізація блоків з бібліотеки рівня і переопределенная — з рівня проекту.</p>
+<p>Такий поділ дозволяє зберегти зміни в блоках при оновленні бібліотеки. Код бібліотеки оновиться, а специфічна реалізація блоків проекту залишиться колишньою, так як знаходиться на іншому рівні проекту.</p>
+<pre><code class="lang-files">library.blocks/
+    button/
+        button.css    # CSS-реалізація кнопки в бібліотеці (висота 20px)
+
+project.blocks/
+    button/
+        button.css    # Перевизначення на рівні проекту (висота 24px)
+</code></pre>
+<h3 class="article__heading article__heading_3" id="Поділ-проекту-на-платформи"><a href="#Поділ-проекту-на-платформи" class="article__heading-anchor"></a>Поділ проекту на платформи</h3><p>Проект розділений на платформи (<code>mobile</code> і <code>desktop</code>) та відповідні рівні зміни у файловій системі. Рівень <code>common</code> містить загальну реалізацію блоків для всіх платформ. На рівні <code>desktop</code> і <code>mobile</code> знаходиться специфіка реалізацій блоків, характерна для кожної з платформ.</p>
+<p>Розглянемо на прикладі:</p>
+<pre><code class="lang-files">common.blocks/
+    button/
+        button.css    # Базова CSS-реалізація кнопки
+
+desktop.blocks/
+    button/
+        button.css    # Особливості кнопки для desktop
+
+mobile.blocks/
+    button/
+        button.css # Особливості кнопки для mobile
+</code></pre>
+<p>При зборці в файл <code>desktop.css</code> потраплять всі базові CSS-правила кнопки з рівня <code>common</code> і перевизначені правила з рівня <code>desktop</code>.</p>
+<pre><code class="lang-css">@<span class="hljs-keyword">import</span> <span class="hljs-string">"common.blocks/button/button.css"</span>;    <span class="hljs-comment">/* Базові CSS-правила */</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"desktop.blocks/button/button.css"</span>;   <span class="hljs-comment">/* Особливості desktop */</span>
+</code></pre>
+<p>Файл <code>mobile.css</code> буде включати базові CSS-правила кнопки з рівня <code>common</code> і перевизначені правила з рівня <code>mobile</code>.</p>
+<pre><code class="lang-css">@<span class="hljs-keyword">import</span> <span class="hljs-string">"common.blocks/button/button.css"</span>;    <span class="hljs-comment">/* Базові CSS-правила */</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"mobile.blocks/button/button.css"</span>;    <span class="hljs-comment">/* Особливості mobile */</span>
+</code></pre>
+</div><ul class="article-rewind"><li class="article-rewind__prev"><a class="article-rewind__prev-link" href="/bem.info/uk/methodology/js-principles/">Особливості JavaScript</a></li> <li class="article-rewind__next"><a class="article-rewind__next-link" href="/bem.info/uk/methodology/build/">Збірка</a></li></ul><div class="article-amendments">Якщо ви помітили помилку, або хочете доповнити статтю, ви завжди можете або написати нам про це на <a class="article-amendments__issue" href="https://github.com/bem/bem-method/issues/new">Гітхабі</a>, або поправити статтю з допомогою <a class="article-amendments__edit" href="http://prose.io/#bem/bem-method/blob/bem-info-data/method/filesystem/filesystem.uk.md">prose.io.</a></div><div class="social-likes"><a class="social-likes__text">Поділитися зі світом: </a><a class="social-likes__service social-likes__service_type_facebook" href="https://www.facebook.com/sharer.php?s=100&amp;url=https%3A%2F%2Fuk.bem.info%2Fmethodology%2Ffilesystem%2F&amp;title=%D0%A4%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B0%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0&amp;image=">Facebook</a> <a class="social-likes__service social-likes__service_type_vk" href="http://vk.com/share.php?&amp;url=https%3A%2F%2Fuk.bem.info%2Fmethodology%2Ffilesystem%2F&amp;title=%D0%A4%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B0%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0&amp;image=">VKontakte</a> <a class="social-likes__service social-likes__service_type_twitter" href="https://twitter.com/share?&amp;url=https%3A%2F%2Fuk.bem.info%2Fmethodology%2Ffilesystem%2F&amp;title=%D0%A4%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B0%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0&amp;image=">Twitter</a></div></div></div><footer class="footer page-bg"><div class="legos legos_inverted"><div class="legos__lego legos__lego_height_4 legos__lego_width_2"></div><div class="legos__lego legos__lego_height_3 legos__lego_width_2"></div><div class="legos__lego legos__lego_height_2 legos__lego_width_2"></div><div class="legos__lego legos__lego_height_3 legos__lego_width_2"></div><div class="legos__lego legos__lego_height_2 legos__lego_width_6"></div><div class="legos__lego legos__lego_height_3 legos__lego_width_6"></div><div class="legos__lego legos__lego_height_4 legos__lego_width_6"></div><div class="legos__lego legos__lego_height_2 legos__lego_width_4"></div><div class="legos__lego legos__lego_height_3 legos__lego_width_2"></div><div class="legos__lego legos__lego_height_2 legos__lego_width_4"></div><div class="legos__lego legos__lego_height_3 legos__lego_width_7"></div><div class="legos__lego legos__lego_height_1 legos__lego_width_4"></div><div class="legos__lego legos__lego_height_3 legos__lego_width_3"></div><div class="legos__lego legos__lego_height_2 legos__lego_width_2"></div><div class="legos__lego legos__lego_height_4 legos__lego_width_3"></div><div class="legos__lego legos__lego_height_3 legos__lego_width_3"></div><div class="legos__lego legos__lego_height_2 legos__lego_width_1"></div><div class="legos__lego legos__lego_height_3 legos__lego_width_4"></div><div class="legos__lego legos__lego_height_2 legos__lego_width_6"></div><div class="legos__lego legos__lego_height_3 legos__lego_width_4"></div><div class="legos__lego legos__lego_height_4 legos__lego_width_3"></div><div class="legos__lego legos__lego_height_2 legos__lego_width_4"></div><div class="legos__lego legos__lego_height_1 legos__lego_width_2"></div><div class="legos__lego legos__lego_height_2 legos__lego_width_4"></div><div class="legos__lego legos__lego_height_3 legos__lego_width_7"></div><div class="legos__lego legos__lego_height_1 legos__lego_width_4"></div><div class="legos__lego legos__lego_height_3 legos__lego_width_3"></div><div class="legos__lego legos__lego_height_4 legos__lego_width_2"></div></div><div class="footer__layout"><ul class="footer__community"><li class="footer__channel"><a class="footer__channel-link" href="https://web-standards.slack.com/messages/bem/">Slack</a></li><li class="footer__channel"><a class="footer__channel-link" href="https://telegram.me/bem_ru">Telegram</a></li><li class="footer__channel"><a class="footer__channel-link" href="https://www.facebook.com/groups/bem.info/">Facebook</a></li><li class="footer__channel"><a class="footer__channel-link" href="https://twitter.com/bem_ru/">Twitter</a></li></ul></div></footer><script>(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter16972024 = new Ya.Metrika({"id":"16972024","webvisor":true,"clickmap":true,"trackLinks":true,"accurateTrackBounce":true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/16972024" style="position:absolute; left:-9999px;"/></div></noscript><script src="/bem.info/uk/methodology.uk.min.js"></script></body></html>
