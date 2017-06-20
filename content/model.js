@@ -30,7 +30,7 @@ module.exports = [
       en: './content/methodology/methodology.en.bemjson.js',
     },
     tags: ['methodology'],
-    type: 'bemjson.js',
+    type: 'methodology',
     bundle: 'methodology-index'
   },
   {

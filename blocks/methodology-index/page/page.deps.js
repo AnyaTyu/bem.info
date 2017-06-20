@@ -1,6 +1,8 @@
 ({
     shouldDeps: [
+        'methodology',
         'promo-page',
+        'promo-menu',
         'promo-header',
         'promo-section',
         'promo-title',

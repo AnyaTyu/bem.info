@@ -32,8 +32,81 @@ module.exports = [{
         }
     ]
 }, {
+    block: 'promo-menu',
+    data: [
+        {
+            text: 'Get Started',
+            description: 'Start quick, finish slow',
+            url: 'https://ru.bem.info/methodology/quick-start/'
+        },
+        {
+            text: 'Get Started',
+            description: 'Start quick, finish slow',
+            url: 'https://ru.bem.info/methodology/quick-start/'
+        },
+        {
+            text: 'Get Started',
+            description: 'Start quick, finish slow',
+            url: 'https://ru.bem.info/methodology/quick-start/'
+        },
+        {
+            text: 'Get Started',
+            description: 'Start quick, finish slow',
+            url: 'https://ru.bem.info/methodology/quick-start/'
+        },
+        {
+            text: 'Get Started',
+            description: 'Start quick, finish slow',
+            url: 'https://ru.bem.info/methodology/quick-start/'
+        },
+        {
+            text: 'Get Started',
+            description: 'Start quick, finish slow',
+            url: 'https://ru.bem.info/methodology/quick-start/'
+        },
+        {
+            text: 'Get Started',
+            description: 'Start quick, finish slow',
+            url: 'https://ru.bem.info/methodology/quick-start/'
+        },
+        {
+            text: 'Get Started',
+            description: 'Start quick, finish slow',
+            url: 'https://ru.bem.info/methodology/quick-start/'
+        },
+        {
+            text: 'Get Started',
+            description: 'Start quick, finish slow',
+            url: 'https://ru.bem.info/methodology/quick-start/'
+        },
+        {
+            text: 'Get Started',
+            description: 'Start quick, finish slow',
+            url: 'https://ru.bem.info/methodology/quick-start/',
+            type: 'additional'
+        },
+        {
+            text: 'Get Started',
+            description: 'Start quick, finish slow',
+            url: 'https://ru.bem.info/methodology/quick-start/',
+            type: 'additional'
+        },
+        {
+            text: 'Get Started',
+            description: 'Start quick, finish slow',
+            url: 'https://ru.bem.info/methodology/quick-start/',
+            type: 'additional'
+        },
+        {
+            text: 'Get Started',
+            description: 'Start quick, finish slow',
+            url: 'https://ru.bem.info/methodology/quick-start/',
+            type: 'additional'
+        }
+    ]
+},{
     block: 'promo-section',
-    mods: { color: 'white' },
+    mods: { color: 'black' },
     content: [
         {
             block: 'promo-title',

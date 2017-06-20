@@ -11,9 +11,19 @@ block('page').content()(function() {
         },
         {
             block: 'content',
-            content: page.type === 'bemjson.js' ? { html: page.content } :
-                    page.type === 'lib' ? { block: 'blocks' } :
-                    { block: 'article-wrap' }
+            content: (function() {
+                if (page.type) {
+                    if (page.type === 'bemjson.js') {
+                        return { html: page.content };
+                    } else if (page.type === 'libs') {
+                        return { block: 'blocks' }
+                    } else {
+                       return { block: page.type };
+                    }
+                } else {
+                    return { block: 'article-wrap' };
+                }
+            }())
         },
         {
             block: 'footer'
