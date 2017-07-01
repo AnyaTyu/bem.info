@@ -14,8 +14,8 @@
     list-style: none;
 
     // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    // background: #fff;
-    background: #f3f1ed;
+    background: #fff;
+    // background: #f3f1ed;
 }
 
 .nav_type_lib
@@ -29,15 +29,19 @@
 
 .nav_type_lib .nav__item
 {
-    min-width: auto;
+    min-width: inherit;
     display: inline-block;
     margin: 0 31px 0 0;
     padding: 6px 3px 4px;
 }
 
+.nav_type_lib .nav__nav-lego {
+    display: none;
+}
+
 .nav__item
 {
-    min-width: 230px;
+    min-width: 224px;
 
     line-height: 30px;
 
@@ -79,6 +83,15 @@
 .nav__link:hover
 {
     color: #000;
+}
+
+.nav__nav-lego {
+    margin-bottom: -237px;
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    height: 237px;
+    width: 100%;
 }
 
 /*tablet*/

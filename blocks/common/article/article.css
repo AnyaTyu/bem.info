@@ -348,6 +348,8 @@
 /* Image height MUST be multiple 16px */
 .article img
 {
+    max-width: 100%;
+
     margin: 7px 0 -1px;
 }
 

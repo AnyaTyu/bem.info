@@ -20,5 +20,12 @@ block('nav').content()(function() {
                 content: title
             }
         };
-    }, this);
+    }, this).concat({
+        elem: 'nav-lego',
+        mix: { block: 'page-bg' },
+        content: {
+            block: 'legos',
+            mods: { inverted: 'white' }
+        }
+    });
 });
