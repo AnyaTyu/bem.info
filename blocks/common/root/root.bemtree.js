@@ -22,6 +22,7 @@ block('root').replace()(function() {
 
     return {
         block: 'page',
+        mods: page.type === 'lib' && { type: 'lib' },
         title: page.head.title,
         head: [
             { elem: 'css', url: '//fonts.googleapis.com/css?family=Open+Sans:300,600,700&subset=cyrillic' },

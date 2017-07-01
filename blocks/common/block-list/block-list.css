@@ -1,5 +1,8 @@
 .block-list
 {
+    position: relative;
+    z-index: 1;
+
     margin: 0;
 
     background: #f3f1ed;

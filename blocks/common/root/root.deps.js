@@ -1,4 +1,6 @@
 ({
     mustDeps: ['i18n'],
-    shouldDeps: ['page']
+    shouldDeps: [
+        { block: 'page', mods: { type: 'lib' } }
+    ]
 })

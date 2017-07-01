@@ -3,6 +3,8 @@ block('blocks').content()(function() {
         data = this.data,
         page = data.page;
 
+    console.log(data.page);
+
     // this page will be redirected to current library version
     // e.g. /platform/libs/bem-components/ -> /platform/libs/bem-components/5.0.0/
     if (!page.version) {
@@ -31,7 +33,7 @@ block('blocks').content()(function() {
                 }, page.block)
         } : {
             block: 'article-wrap',
-            mix: { block: 'blocks', elem: 'data' },
+            mix: { block: 'blocks', elem: 'data' }
         }
     ]
 });

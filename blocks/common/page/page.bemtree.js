@@ -1,6 +1,7 @@
 block('page').content()(function() {
     var data = this.data,
-        page = data.page;
+        page = data.page,
+        url = page.url;
 
     return [
         {
@@ -10,20 +11,20 @@ block('page').content()(function() {
             block: 'sitemap'
         },
         {
-            block: 'content',
-            content: (function() {
-                if (page.type) {
-                    if (page.type === 'bemjson.js') {
-                        return { html: page.content };
-                    } else if (page.type === 'libs') {
-                        return { block: 'blocks' }
-                    } else {
-                       return { block: page.type };
-                    }
-                } else {
-                    return { block: 'article-wrap' };
+            elem: 'content',
+            content: [
+                url !== '/forum/' && url !== '/' ? { block: 'nav' } : undefined,
+                {
+                    block: 'content',
+                    content: (function() {
+                        if (page.type) {
+                            return page.type === 'bemjson.js' ? { html: page.content } : { block: page.type }
+                        } else {
+                            return { block: 'article-wrap' };
+                        }
+                    }())
                 }
-            }())
+            ]
         },
         {
             block: 'footer'

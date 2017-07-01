@@ -11,6 +11,12 @@
     text-size-adjust: 100%;
 }
 
+.page__content {
+    display: flex;
+
+    flex-direction: row;
+}
+
 /*mobile*/
 @media all and (max-width: 480px)
 {
